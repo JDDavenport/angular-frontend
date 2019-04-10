@@ -1,5 +1,6 @@
 from django.urls import path, include
-
+#dmp
+from django.conf.urls import url, include
 from django.contrib import admin
 
 admin.autodiscover()
@@ -18,4 +19,7 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
+    #dmp
+    url('', include('django_mako_plus.urls')),
+
 ]
