@@ -26,10 +26,16 @@
 from django.urls import path, include
 
 from django.contrib import admin
+from rest_framework import routers
+from infinite-atoll-72014.tutorial import views
 
 admin.autodiscover()
 
 import hello.views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path("", hello.views.index, name="index"),

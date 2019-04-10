@@ -6,4 +6,5 @@ psycopg2-binary
 dj-database-url
 django-mako-plus
 django-admin
+django-rest-framework
 #datetime
