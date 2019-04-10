@@ -27,7 +27,7 @@ from django.urls import path, include
 
 from django.contrib import admin
 from rest_framework import routers
-from infinite-atoll-72014.tutorial import views
+from "infinite-atoll-72014".tutorial import views
 
 admin.autodiscover()
 
@@ -41,4 +41,6 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
+    path('api', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
