@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect
 from django_mako_plus import view_function
 from django import forms
-from homepage import models as hmod
+# from homepage import models as hmod
 from django.contrib.auth import models as pmod
 
 
@@ -12,9 +12,9 @@ def process_request(request):
         form = MyForm(request.POST)
         if form.is_valid():
             searchTerm = form.cleaned_data['userInput']   
-#            p1 = pmod.Permission.objects.get(id=1)
-            a1 = hmod.overdoses.objects.filter(abbrev = 'UT')
-            searchTerm = a1.abbrev
+            # p1 = pmod.Permission.objects.get(id=1)
+            # a1 = hmod.overdoses.objects.filter(abbrev = 'UT')
+            # searchTerm = a1.abbrev
             args = {'form': form, 'searchTerm': searchTerm}
             return request.dmp.render('search.html', args)
     else:
