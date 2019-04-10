@@ -27,8 +27,8 @@ from django.urls import path, include
 
 from django.contrib import admin
 from rest_framework import routers
-ifat = __import__('infinite-atoll-72014')
-from ifat.tutorial import views
+#ifat = __import__(infinite-atoll-72014)
+from tutorial import views
 
 admin.autodiscover()
 
