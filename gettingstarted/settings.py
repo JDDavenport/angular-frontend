@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "hello",
     'django_mako_plus',
     'rest_framework',
+    'tutorial',
     
 ]
 
