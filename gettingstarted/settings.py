@@ -55,30 +55,30 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'django_mako_plus.RequestInitMiddleware',
 ]
-DEBUG_PROPAGATE_EXCEPTIONS = DEBUG  # SECURITY WARNING: never set this True on a live site
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'dmp_simple': {
-            'format': '%(levelname)s::DMP %(message)s'
-        },
-    },
-    'handlers': {
-        'dmp_console':{
-            'level':'DEBUG',
-            'class':'logging.StreamHandler',
-            'formatter': 'dmp_simple'
-        },
-    },
-    'loggers': {
-        'django_mako_plus': {
-            'handlers': ['dmp_console'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-    },
-}
+# DEBUG_PROPAGATE_EXCEPTIONS = DEBUG  # SECURITY WARNING: never set this True on a live site
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'dmp_simple': {
+#             'format': '%(levelname)s::DMP %(message)s'
+#         },
+#     },
+#     'handlers': {
+#         'dmp_console':{
+#             'level':'DEBUG',
+#             'class':'logging.StreamHandler',
+#             'formatter': 'dmp_simple'
+#         },
+#     },
+#     'loggers': {
+#         'django_mako_plus': {
+#             'handlers': ['dmp_console'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#     },
+# }
 ROOT_URLCONF = "gettingstarted.urls"
 
 TEMPLATES = [
