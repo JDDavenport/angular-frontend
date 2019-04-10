@@ -7,7 +7,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    r = 'Hello this is our live website NOTE DMP HOMEPAGE DOES NOT WORK LIVE DONT INSTALL OR I WILL COME FOR YO...U'
+    r = 'yo'
     print(r)
     return HttpResponse('<pre>' + r + '</pre>')
 
