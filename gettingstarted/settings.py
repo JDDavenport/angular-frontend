@@ -52,6 +52,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django_mako_plus.RequestInitMiddleware',
 ]
 
 ROOT_URLCONF = "gettingstarted.urls"
@@ -69,7 +70,11 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
             ]
         },
-    }
+    },
+    {
+        'NAME': 'django_mako_plus',
+        'BACKEND': 'django_mako_plus.MakoTemplates',
+    },
 ]
 
 WSGI_APPLICATION = "gettingstarted.wsgi.application"
