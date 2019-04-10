@@ -158,3 +158,13 @@ DATABASES = {
     'default': dj_database_url.config(conn_max_age=600, ssl_require=False) 
     }
 django_heroku.settings(locals())
+##DATABASES = {
+ #   'default': {
+ #       'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+ #       'NAME': 'dctkgotk1urtfr',                     
+ #       'USER': 'glugdpadiclitw',
+ #       'PASSWORD': '5dd16a444998aba1a7fc2277d35ab12ff98f01393a3926ed418d9046f464f6bd',
+ #       'HOST': 'ec2-54-225-113-7.compute-1.amazonaws.com', # Or something like this
+ #       'PORT': '5432',                     
+ #   }
+#}
