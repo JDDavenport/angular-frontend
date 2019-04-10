@@ -1,1 +1,1 @@
-web: gunicorn pub_main:homepage
+web: gunicorn gettingstarted.wsgi --log-file -
