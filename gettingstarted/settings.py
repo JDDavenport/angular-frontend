@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "hello",
     'django_mako_plus',
-    'homepage'
+    
 ]
 
 MIDDLEWARE = [
