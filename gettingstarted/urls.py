@@ -39,6 +39,7 @@ router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path("", hello.views.index, name="index"),
+    path("hello/search", hello.views.search, name="search"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
     path('api/', include(router.urls)),
