@@ -27,7 +27,7 @@ from django.urls import path, include
 
 from django.contrib import admin
 from rest_framework import routers
-from infinite_atoll_72014.tutorial import views
+from infinite-atoll-72014.tutorial import views
 
 admin.autodiscover()
 
