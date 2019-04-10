@@ -7,7 +7,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    r = 'dam'
+    r = 'dam before urls can be ready'
     print(r)
     return HttpResponse('<pre>' + r + '</pre>')
 
