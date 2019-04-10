@@ -36,6 +36,10 @@ import hello.views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'prescribers', views.PrescriberViewSet)
+router.register(r'overdoses', views.OverdosesViewSet)
+router.register(r'docdrugqty', views.DocDrugQtyViewSet)
+router.register(r'dangerscores', views.DangerScoreViewSet)
 
 urlpatterns = [
     path("", hello.views.index, name="index"),
