@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.conf.urls import url, include
 admin.autodiscover()
 
-#import hello.views
+import hello
 
 # To add a new path, first import the app:
 # import blog
